@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  Все для цветов
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<div class="nav">
+    <a href="{% url 'home' %}">
+    <img src="{% static 'images/hand.png' %}" alt="logo" class="logo" height="1" width="40"></a>
+    <ul class="menu">
+        <li>
+            <a href="{% url 'plants' %}">
+                Комнатные растения
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'forPlants' %}">
+                Все для цветов
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'oceanTheme' %}">
+                Морская тема
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'help' %}">
+                Помощь
+            </a>
+        </li>
+        <li>
+            <a href="tel:+77015824478">
+                +7 701 582-44-78
+            </a>
+        </li>
+    </ul>
+    <a href="{% url 'home' %}" class="tel">
+        <img src="{% static 'images/carts.png' %}" class="logo" height="32" width="32"></a>
+    </a>
+</div>
+
+<div class="container_p">
+    <div class="wrapper">
+        {% for element in allFor %}  
+        <div class="product-img">
+            <a href="{% url 'home' %}"></a>
+          <img src="{{ element.img.url }}" height="400" width="327">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>{{ element.title }}</h1>
+            <h2>{{ element.volume }}</h2>
+            <p>{{ element.description }}</p>
+          </div>
+          <div class="product-price-btn">
+            <p><span>{{ element.price }}</span> тг</p>
+            <a href="{% url 'home' %}">
+            <button  type="button">Купить</button></a>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

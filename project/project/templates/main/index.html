@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<header id="header" class="header">
+    <div class="container">
+        <div class="nav">
+            <a href="{% url 'home' %}">
+            <img src="{% static 'images/hand.png' %}" alt="logo" class="logo" height="1" width="40"></a>
+            <ul class="menu">
+                <li>
+                    <a href="{% url 'plants' %}">
+                        Комнатные растения
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'forPlants' %}">
+                        Все для цветов
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'oceanTheme' %}">
+                        Морская тема
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'help' %}">
+                        Помощь
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+77015824478">
+                        +7 701 582-44-78
+                    </a>
+                </li>
+            </ul>
+            <a href="{% url 'home' %}" class="tel">
+                <img src="{% static 'images/carts.png' %}" class="logo" height="32" width="32"></a>
+            </a>
+        </div>
+        <div class="offer">
+            <p>Обеспечь себя кислородом!</p>
+            <h1>
+                La Fleur
+            </h1>
+            <div class="button-wrapper">
+                <a href="{% url 'plants' %}" class="arrow-btn">Выбрать<span></span></a>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="about">
+    <div class="container">
+        <h2>About the event</h2>
+        <div class="description">
+            <div class="desc-left">
+                <h3>Rebuilding the society</h3>
+                <p>
+                    Burning Man is a network of people inspired by the values reflected in the Ten Principles and united in the pursuit of a more creative and connected existence in the world. Throughout the year we work to build Black Rock City, home of the largest annual Burning Man gathering, and nurture the distinctive culture emerging from that experience. 
+                </p>
+            </div>
+            <div class="desc-right">
+                <h3>This drives us</h3>
+                <p>
+                    Burning Man Project will bring experiences to people in grand, awe-inspiring and joyful ways that lift the human spirit, address social problems, and inspire a sense of culture, community, and civic engagement. Burning Man provides infrastructural tools and frameworks to support local communities in applying the Ten Principles through six interconnected program areas, including Arts, Civic Involvement, Culture, Education, Philosophical Center, and Social Enterprise.
+                </p>
+            </div>			
+        </div>
+        <div class="gallery">
+            <img src="{% static 'images/img1.jpg' %}" alt="Event photo 1">
+            <img src="img/img2.jpg" alt="Event photo 2">
+            <img src="img/img3.jpg" alt="Event photo 3">
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

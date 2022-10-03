@@ -1,0 +1,375 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Anton', sans-serif;
+	color: black;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	color: black;
+	font-family: 'Lobster;;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 58px;
+}
+
+h3 {
+	font-size: 25px;
+	margin-bottom: 28px;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding-top: 113px	
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1170px;
+	/*позиционирование по центру*/
+	margin: 0 auto; 
+}
+
+.header {
+	background: url('../images/манстера.jpg') no-repeat center top / cover;
+	padding-top: 40px;
+	color: #fff;
+	padding-bottom: 322px
+}
+
+header a {
+	color: #fff;
+}
+
+.logo {
+	margin-right: 69px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu li a {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	color: black;
+}
+
+.menu li a:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.menu li {
+	margin-right: 40px;
+}
+
+.tel {
+	font-size: 17px;
+	margin-left: auto;
+	letter-spacing: 0.1em;
+	color: black;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+.offer {
+	text-transform: uppercase;
+	margin-top: 216px;
+	color: black;
+}
+
+.offer p {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+}
+
+.offer h1 {
+	font-size: 100px;
+	margin-bottom: 19px;
+	margin-top: -9px;
+	letter-spacing: 0.02em
+}
+
+.btn {
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 17px 47px;
+	border: 1px solid rgb(0, 0, 0);
+	width: 238px;
+	transition: all 0.5s ease;
+	color: black;
+	background-color: white;
+}
+
+.btn:hover {
+	background: #fff;
+    color: rgb(34, 240, 65);
+}
+
+.button-wrapper {
+	max-width: 200px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+ }
+ .arrow-btn {
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: #2fc989;
+	border: 4px solid #2fc989;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .4em;
+	transition: .2s;
+	transition-delay: .1s;
+ }
+ .arrow-btn:hover {
+	color: rgb(0, 0, 0);
+	padding: 15px 35px;
+ }
+ .arrow-btn span {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	overflow: hidden;
+	transition: .35s cubic-bezier(.215, .61, .215, 1);
+ }
+ .arrow-btn span:before {
+	content: "";
+	position: absolute;
+	top: -5%;
+	left: -210%;
+	width: 200%;
+	height: 108%;
+	background: #2fc989;
+	transform: skew(-15deg, 0);
+	transition: .5s;
+ }
+ .arrow-btn:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: -1000%;
+	height: 2px;
+	margin-top: -1px;
+	width: 400%;
+	background: #2fc989;
+	transition: .5s;
+ }
+ .arrow-btn:hover:after {
+	width: 140%;
+	left: -20%;
+ }
+ .arrow-btn:hover span:before {
+	left: -25%;
+ }
+
+.description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	text-align: justify;
+	line-height: 1.62em;
+}
+
+.desc-left, .desc-right {
+	width: 567px;
+}
+
+.gallery {
+	margin-top: 67px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gallery img {
+	transition: all 0.5s ease;
+}
+
+.gallery img:hover {
+	box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+	transform: scale(1.1);
+}
+
+.footer-text {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	padding: 114px 0
+}
+
+.footer-text p {
+	margin-right: 67px;
+}
+
+/* card*/
+
+.container_p {
+	width: 1500px;
+	/*позиционирование по центру*/
+	margin:0 auto; 
+	padding-left: 90px;
+}
+
+
+body {
+	background-color: #dcf8d7;
+  }
+  
+  .wrapper {
+	margin-right: 20px;
+	border-radius: 7px 7px 7px 7px;
+	/* VIA CSS MATIC https://goo.gl/cIbnS */
+	-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-img {
+	float: left;
+	height: 400px;
+	width: 300px;
+	margin-top: 80px;
+  }
+  
+  .product-img img {
+	border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+	float: left;
+	height: 400px;
+	width: 320px;
+	border-radius: 0 7px 10px 7px;
+	background-color: rgb(255, 255, 255);
+	margin-right: 70px;
+	margin-top: 80px;
+  }
+  
+  .product-text {
+	height: 300px;
+	width: 327px;
+	
+  }
+  
+  .product-text h1 {
+	margin: 0 0 0 38px;
+	padding-top: 52px;
+	font-size: 34px;
+	color: #474747;
+  }
+  
+  .product-text h1,
+  .product-price-btn p {
+	font-family: 'Bentham', serif;
+  }
+  
+  .product-text h2 {
+	margin: 0 0 47px 38px;
+	font-size: 13px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	letter-spacing: 0.2em;
+  }
+  
+  .product-text p {
+	height: 125px;
+	margin: 0 0 0 38px;
+	font-family: 'Playfair Display', serif;
+	color: #8d8d8d;
+	line-height: 1.7em;
+	font-size: 15px;
+	font-weight: lighter;
+	overflow: hidden;
+  }
+  
+  .product-price-btn {
+	height: 103px;
+	width: 350px;
+	margin-top: 10px;
+	position: relative;
+  }
+  
+  .product-price-btn p {
+	display: inline-block;
+	position: absolute;
+	top: -13px;
+	height: 50px;
+	font-family: 'Trocchi', serif;
+	margin: 0 0 0 38px;
+	font-size: 20px;
+	font-weight: lighter;
+	color: #474747;
+  }
+  
+  span {
+	display: inline-block;
+	height: 50px;
+	font-family: 'Suranna', serif;
+	font-size: 25px;
+  }
+  
+  .product-price-btn button {
+	float:right;
+	display: inline-block;
+	height: 50px;
+	width: 176px;
+	margin: 0 40px 0 16px;
+	box-sizing: border-box;
+	border: transparent;
+	border-radius: 60px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	background-color: #9cebd5;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  .product-price-btn button:hover {
+	background-color: #79b0a1;
+  }
